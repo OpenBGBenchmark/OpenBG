@@ -31,7 +31,7 @@ OpenBG500
 
 #### 查看数据集数据
 
-```shell
+```
 $ head -n 3 train.tsv
 <http://ali.openkg.cn/alischema#Product/pid_95366c60c08b45d8931d2f459712ff12>	<http://ali.openkg.cn/alischema#Property/External_Material>	苦荞麦
 <http://ali.openkg.cn/alischema#Product/pid_6c3646395ec10143cdc8de645aeb93a9>	<http://ali.openkg.cn/alischema#Property/Flavor>	原味硬糕850克【10包40块糕】
@@ -86,7 +86,7 @@ OpenBG500-L
 
 #### 查看数据集数据
 
-```shell
+```
 $ head -n 3 train.tsv 
 <http://ali.openkg.cn/alischema#Product/pid_ca08a196fd0388a37d2b671826b4456f>	<http://ali.openkg.cn/alischema#Property/Imported>	否
 <http://ali.openkg.cn/alischema#Product/pid_39eee17628071aa99e2d45be140d5cb7>	<http://ali.openkg.cn/alischema#Property/Applicable_Season>	夏季
