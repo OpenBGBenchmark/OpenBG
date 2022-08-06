@@ -1,17 +1,13 @@
-# OpenBG：大规模开放数字商业知识图谱
+# OpenBG：Large Scale Open Business Knowledge Graph
 
-<p align="left">
-    <b> 简体中文 | <a href="https://github.com/OpenBGBenchmark/OpenBG/blob/main/README_EN.md">English</a> </b>
-</p>
+[OpenBG](https://kg.alibaba.com/) is an open business knowledge graph that utilizes a unified Schema covering multi-modal datasets in large scale, which contains millions of products and consumer demand provided by ZJUKG Lab of Zhejiang University and the group of Alibaba Knowledge Engine.
 
-[OpenBG](https://kg.alibaba.com/)是开放的数字商业知识图谱，是一个使用统一Schema组织、涵盖产品和消费需求的百万级多模态数据集。OpenBG由浙江大学ZJUKG实验室、阿里巴巴藏经阁团队联合提供，开放的目标是利用开放的商业知识发现社会经济的价值，促进数字商务数字经济等领域的交叉学科研究，服务数字经济健康发展的国家战略需求。
-
-## 数据集构建流程
+## Building process of OpenBG benchmarks
 <center><img src="./img/OpenBG.png" width="80%"></center>
 
-## 数据集
+## Datasets
 
-数据集统计数据如下：
+Summary statistics of OpenBG datasets:
 |    Dataset    |    # Ent   | # Rel |   # Train   |  # Dev  | # Test  |
 | ------------- | ---------- | ----- | ----------- | ------- | ------- |
 |   OpenBG-IMG  | 27,910     |  136  | 230,087     | 5,000   | 14,675  |
@@ -21,19 +17,19 @@
 
 ### OpenBG500
 
-OpenBG500包含500个关系，从OpenBG中筛选采样得到。
+OpenBG500 contains 500 relations, which is filtered and sampled from OpenBG(Full).
 
-#### 数据集目录结构
+#### Directory Tree
 ```shell
 OpenBG500
-├── train.tsv					# 训练集数据
-├── valid.tsv					# 验证集数据
-├── test.tsv					# 测试集数据
-├── entity2text.tsv				# 实体对应的中文描述
-└── relation2text.tsv			# 关系对应的中文描述
+├── train.tsv					# Training set
+├── valid.tsv					# Validation set
+├── test.tsv					# Test set
+├── entity2text.tsv				# Description of entities in Chinese
+└── relation2text.tsv			# Description of relations in Chinese
 ```
 
-#### 查看数据集数据
+#### Check the data
 
 ```
 $ head -n 3 train.tsv
@@ -42,9 +38,9 @@ $ head -n 3 train.tsv
 <http://ali.openkg.cn/alischema#Product/pid_a31f0d7ce23fbb80f250ec5b2dd2bc82>	<http://ali.openkg.cn/alischema#Property/inMarket>	<http://ali.openkg.cn/alischema#Market_segment/tag_0b256e3b23f5b7a9d006f87d28ce0ead>
 ```
 
-#### 使用python转换并读取数据集
+#### Use Python to transfer and read the data
 
-获取实体、关系对应文本字典：`ent2text`和`rel2text`
+Get the map of Entity(Relatioin)-Description: `ent2text` and `rel2text`:
 ```python
 with open('entity2text.tsv', 'r') as fp:
     data = fp.readlines()
@@ -65,7 +61,7 @@ with open('relation2text.tsv', 'r') as fp:
     rel2text = {line[0]: line[1] for line in lines}
 ```
 
-数据转换成文本：
+Transfer the data to description: 
 ```python
 with open('train.tsv', 'r') as fp:
     data = fp.readlines()
@@ -78,17 +74,17 @@ with open('train.tsv', 'r') as fp:
 
 ### OpenBG500-L
 
-OpenBG500-L包含500个关系，从OpenBG中筛选采样得到，规模比OpenBG大。
+OpenBG500-L contains 500 relations, larger than OpenBG500, which is also filtered and sampled from OpenBG(Full).
 
-#### 数据集目录结构
+#### Directory Tree
 ```shell
 OpenBG500-L
-├── train.tsv					# 训练集数据
-├── valid.tsv					# 验证集数据
-└── test.tsv					# 测试集数据
+├── train.tsv					# Training set
+├── valid.tsv					# Validation set
+└── test.tsv					# Test set
 ```
 
-#### 查看数据集数据
+#### Check the data
 
 ```
 $ head -n 3 train.tsv 
@@ -97,7 +93,7 @@ $ head -n 3 train.tsv
 <http://ali.openkg.cn/alischema#Product/pid_549c825765a62f6b8c6b53836d61963c>	<http://ali.openkg.cn/alischema#Property/placeOfOrigin>	<http://ali.openkg.cn/alischema#Place_Of_Origin/中国大陆>
 ```
 
-#### 使用python读取数据集
+#### Use Python to read the data
 
 ```python
 with open('train.tsv', 'r') as fp:
@@ -111,19 +107,19 @@ with open('train.tsv', 'r') as fp:
     # ['<http://ali.openkg.cn/alischema#Product/pid_549c825765a62f6b8c6b53836d61963c>', '<http://ali.openkg.cn/alischema#Property/placeOfOrigin>', '<http://ali.openkg.cn/alischema#Place_Of_Origin/中国大陆>']
 ```
 
-## 获取数据
+## How to download
 
-- 数据集下载链接：
+- Download link：
 
-| Dataset       |   Google Drive   | 百度网盘 | 
+| Dataset       |   Google Drive   | Baidu Netdisk | 
 | ------------- | ---------------- | ------ |
-| OpenBG500     |    [下载链接](https://drive.google.com/file/d/1EC3UzuC9o1jQNiteICUInPfTvHz7aKSp/view?usp=sharing)    |   [提取码wi7s](https://pan.baidu.com/s/1Arm4Jbw5HgY2-jHT2THu8g) |
-| OpenBG500-L   | [下载链接](https://drive.google.com/file/d/1A9K_AOEMyzQUlAc7cRBlGXr8CBjUWOtV/view?usp=sharing) | [提取码bgq2](https://pan.baidu.com/s/1THLmoYVM_zB5cLMVzPPmtg) |
+| OpenBG500     |    [Download](https://drive.google.com/file/d/1EC3UzuC9o1jQNiteICUInPfTvHz7aKSp/view?usp=sharing)    |   [Code: wi7s](https://pan.baidu.com/s/1Arm4Jbw5HgY2-jHT2THu8g) |
+| OpenBG500-L   | [Download](https://drive.google.com/file/d/1A9K_AOEMyzQUlAc7cRBlGXr8CBjUWOtV/view?usp=sharing) | [Code: bgq2](https://pan.baidu.com/s/1THLmoYVM_zB5cLMVzPPmtg) |
 
-- OpenBG-IMG数据集可通过参加阿里天池[CCKS2022面向数字商务的知识处理与应用评测任务三：多模态商品知识图谱链接预测](https://tianchi.aliyun.com/competition/entrance/531957/information)比赛获取，baseline代码请关注https://github.com/OpenBGBenchmark/OpenBG-IMG 。
-- OpenBG(Full)数据集可以在[kg.alibaba.com](https://kg.alibaba.com/)申请获取
+- OpenBG-IMG is available at [CCKS2022 Knowledge Processing and Application Evaluation for Digital Commerce Task 3: Multimodal Commodity Knowledge Graph Link Prediction](https://tianchi.aliyun.com/competition/entrance/531957/information), and the source code of baselines is https://github.com/OpenBGBenchmark/OpenBG-IMG .
+- OpenBG(Full) is available at [kg.alibaba.com](https://kg.alibaba.com/).
 
-## 阿里天池评测
+## Evaluation online
 
-- OpenBG-IMG相关评测链接：https://tianchi.aliyun.com/competition/entrance/531957/information
-- OpenBG500相关评测链接：https://tianchi.aliyun.com/dataset/dataDetail?dataId=122271
+- OpenBG-IMG: https://tianchi.aliyun.com/competition/entrance/531957/information
+- OpenBG500: https://tianchi.aliyun.com/dataset/dataDetail?dataId=122271
