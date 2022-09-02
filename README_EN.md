@@ -161,7 +161,7 @@ _ = [print(line) for line in train[:2]]
 
 <center><img src="./img/submit.png" width="80%"></center>
 
-1. Every submit file must follow the submit format:
+1. Every submit file must follow the name format:
 * OpenBG500: OpenBG500_test.tsv
 * OpenBG500-L: OpenBG500-L_test.tsv
 * OpenBG-IMG: OpenBG-IMG_test.tsv
