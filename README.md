@@ -49,6 +49,11 @@ OpenBG-IMG
 └── OpenBG-IMG_example_pred.tsv 	# 提交结果示例
 ```
 
+#### 基线
+
+- https://github.com/OpenBGBenchmark/OpenBG-IMG
+- [MKGformer](https://github.com/zjunlp/MKGformer/)
+
 ### OpenBG500
 
 OpenBG500包含500个关系，从OpenBG中筛选采样得到。
@@ -64,6 +69,12 @@ OpenBG500
 └── OpenBG500_example_pred.tsv 		# 提交结果示例
 ```
 
+#### 基线
+
+- https://github.com/OpenBGBenchmark/OpenBG500
+- [KNN-KG](https://github.com/zjunlp/KNN-KG)
+- [GenKGC](https://arxiv.org/abs/2202.02113)
+
 ### OpenBG500-L
 
 OpenBG500-L包含500个关系，从OpenBG中筛选采样得到，规模比OpenBG大。
@@ -78,6 +89,17 @@ OpenBG500-L
 ├── OpenBG500-L_relation2text.tsv 		# 关系对应文本
 └── OpenBG500-L_example_pred.tsv 		# 提交结果示例
 ```
+
+#### 基线
+
+- [KNN-KG](https://github.com/zjunlp/KNN-KG)
+- [GenKGC](https://arxiv.org/abs/2202.02113)
+
+### OpenBG(Full)
+
+秉承“利用开放的商业知识发现社会经济价值”的理念，大规模开放数字商业知识图谱OpenBG发布。OpenBG第一个版本已包含了超过18亿的三元组，多达67万的核心概念，2681类关系。
+
+OpenBG(Full)的详细信息见文末或OpenBG官方网站[https://kg.alibaba.com](https://kg.alibaba.com)。
 
 ## 使用数据
 
@@ -111,12 +133,12 @@ OpenBG500-L
 
 ```
 $ head -n 3 {数据集}_train.tsv
-<http://ali.openkg.cn/alischema#Product/pid_95366c60c08b45d8931d2f459712ff12>	<http://ali.openkg.cn/alischema#Property/External_Material>	苦荞麦
-<http://ali.openkg.cn/alischema#Product/pid_6c3646395ec10143cdc8de645aeb93a9>	<http://ali.openkg.cn/alischema#Property/Flavor>	原味硬糕850克【10包40块糕】
-<http://ali.openkg.cn/alischema#Product/pid_a31f0d7ce23fbb80f250ec5b2dd2bc82>	<http://ali.openkg.cn/alischema#Property/inMarket>	<http://ali.openkg.cn/alischema#Market_segment/tag_0b256e3b23f5b7a9d006f87d28ce0ead>
+ent_135492      rel_0352        ent_015651
+ent_020765      rel_0448        ent_214183
+ent_106905      rel_0418        ent_121073
 ```
 
-### 使用python转换并读取数据集
+### 使用python读取并转换数据集
 
 1. 读取原始数据：
 ```python
@@ -195,3 +217,226 @@ zip somename.zip  {数据集}_test.tsv
 **注：请用zip压缩命令来进行压缩，保证解压后的结果是tsv文件，不可再包含中间目录层。**
 
 3. 选手可以只提交部分任务的结果，如只提交“OpenBG500”任务：zip somename.zip OpenBG500_test.tsv，未预测任务的分数默认为0。
+
+## OpenBG(Full)数据集
+
+商业要素涉及多种不同类型的知识，我们针对不同的知识类型采用不同的知识建模方法。例如针对标品知识所涉及的类目及属性关系型知识，我们采用本体表示语言进行建模；对于概念型知识我们采用更为简单概念层次关系表示方法；对于实体关系型知识我们采用属性图Property Graph方式进行建模；对于商业规则知识我们采用规则知识建模方法。通过建立一套基于消费者需求场景的知识图谱表示体系来组织商品，并把商业要素知识沉淀到图谱中，以解决业务痛点。OpenBG已经包含近200万元组的本体三元组，一百多万条概念知识，近十多亿的实体关系三元组，以及二十多万条的规则型知识（待发布）。下图是一个案例，展示了OpenBG的数据组织形式。
+<font class=center>![enter image description here](./img/OpenBG_full.png)</font>
+<br/>
+### 格式/协议
+
+数据分为TBox、ABox和sample_data三部分，支持.ttl、.nt、.jsonld、.owl四种数据格式。
+其中，i）.ttl、.owl格式: 与 .xml 格式类似；ii）.nt: 三元组格式，每一行的数据格式为[头实体]\t[关系]\t[尾实体]；iii）.jsonld 与 .json格式类似。
+<br />
+
+### 数据集统计信息
+|类型| 数量 |
+|--|--|
+| 类及属性个数 | 46万+ |
+| 核心概念书 | 67万+ |
+| 标准产品数 | 306万+ |
+| 总实体数 | 1600万+ |
+| 总三元组数 | 18亿+ |
+<br />
+
+### 文件清单
+**ABox分为以下8个子压缩文件：**
+<table>
+	<tr>
+	<th>文件名</th>
+	<th>包含文件</th>
+	</tr>
+    <tr>
+        <td rowspan="4">OpenBG_ABox_Part1.zip包括如下文件</td>
+    <td> OpenBG_ABox_Product_OriginStr_Attributes.nt.tar.gz</td>
+    </tr>
+    <tr>
+    <td> OpenBG_ABox_Product_OriginStr_Attributes.ttl.tar.gz</td>
+    </tr>
+        <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wClass.nt</td>
+    </tr>
+            <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wClass.ttl</td>
+    </tr>
+    <tr>
+        <td rowspan="4">OpenBG_ABox_Part2.zip包括如下文件</td>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part1.ttl.tar.gz</td>
+    </tr>
+    <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part2.ttl.tar.gz</td>
+    </tr>
+        <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part3.ttl.tar.gz</td>
+    </tr>
+            <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part4.ttl.tar.gz</td>
+    </tr>
+    <tr>
+        <td rowspan="4">OpenBG_ABox_Part3.zip包括如下文件</td>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part5.ttl.tar.gz</td>
+    </tr>
+    <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part6.ttl.tar.gz</td>
+    </tr>
+        <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part7.ttl.tar.gz</td>
+    </tr>
+            <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part8.ttl.tar.gz</td>
+    </tr>
+    <tr>
+        <td rowspan="4">OpenBG_ABox_Part4.zip包括如下文件</td>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part9.ttl.tar.gz</td>
+    </tr>
+    <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part10.ttl.tar.gz</td>
+    </tr>
+        <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part11.ttl.tar.gz</td>
+    </tr>
+            <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part12.ttl.tar.gz</td>
+    </tr>
+    <tr>
+        <td rowspan="4">OpenBG_ABox_Part5.zip包括如下文件</td>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part13.ttl.tar.gz</td>
+    </tr>
+    <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part14.ttl.tar.gz</td>
+    </tr>
+        <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part15.ttl.tar.gz</td>
+    </tr>
+            <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part16.ttl.tar.gz</td>
+    </tr>
+    <tr>
+        <td rowspan="4">OpenBG_ABox_Part6.zip包括如下文件</td>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part17.ttl.tar.gz</td>
+    </tr>
+    <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part18.ttl.tar.gz</td>
+    </tr>
+        <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part19.ttl.tar.gz</td>
+    </tr>
+            <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part20.ttl.tar.gz</td>
+    </tr>
+    <tr>
+        <td rowspan="10">OpenBG_ABox_Part7.zip包括如下文件</td>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part1.nt.tar.gz</td>
+    </tr>
+    <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part1.ttl.tar.gz</td>
+    </tr>
+        <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part2.nt.tar.gz</td>
+    </tr>
+            <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part2.ttl.tar.gz</td>
+    </tr>
+        <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part3.nt.tar.gz</td>
+    </tr>
+            <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part3.ttl.tar.gz</td>
+    </tr>
+        <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part4.nt.tar.gz</td>
+    </tr>
+            <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part4.ttl.tar.gz</td>
+    </tr>
+        <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part5.nt.tar.gz</td>
+    </tr>
+            <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part5.ttl.tar.gz</td>
+    </tr>
+    <tr>
+        <td rowspan="8">OpenBG_ABox_Part8.zip包括如下文件</td>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part6.nt.tar.gz</td>
+    </tr>
+    <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part6.ttl.tar.gz</td>
+    </tr>
+        <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part7.nt.tar.gz</td>
+    </tr>
+            <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part7.ttl.tar.gz</td>
+    </tr>
+        <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part8.nt.tar.gz</td>
+    </tr>
+            <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part8.ttl.tar.gz</td>
+    </tr>
+        <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part9.nt.tar.gz</td>
+    </tr>
+            <tr>
+    <td> OpenBG_ABox_Product_OriginStr_wConcept_part9.ttl.tar.gz</td>
+    </tr>
+</table>
+   
+
+#### TBox包含1个压缩文件：
+<table>
+	<tr>
+	<th>文件名</th>
+	<th>包含文件</th>
+	</tr>
+    <tr>
+        <td rowspan="3">OpenBG_TBox.zip包括如下文件</td>
+    <td> OpenBG_TBox_All_OriginStr.jsonld</td>
+    </tr>
+    <tr>
+    <td>OpenBG_TBox_All_OriginStr.jsonld</td>
+    </tr>
+    <tr>
+    <td>OpenBG_TBox_All_OriginStr.nt</td>
+    </tr>
+    <tr>
+    <td>OpenBG_TBox_All_OriginStr.ttl</td>
+    </tr>
+</table>
+    
+
+#### Sample_data包含1个压缩文件：
+
+-   Sample_data.zip
+    
+
+<br/>
+
+**文件说明：**
+OpenBG_ABox文件：主要包含标准产品、类和概念实例的关系以及本身的属性信息
+|文件类型| 文件内容 |
+|--|--|
+| OpenBG_ABox_Product_OriginStr_Attributes.[nt&#124;tl] | 主要包含产品属性信息 |
+|  OpenBG_ABox_Product_OriginStr_wClass.[nt&#124;ttl] | 主要包含产品和类别信息，以及与产地、品牌的关联信息 |
+| OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part[1-20].ttl | 主要包含产品与5类概念（场景、人群、适用时间、主题、细分市场）实例的联系 | 
+| OpenBG_ABox_Product_OriginStr_wConcept_part[1-9].[nt&#124;ttl] | 主要包含产品与细分市场这一概念的实例的联系 |
+
+OpenBG_TBox文件：主要包含核心类（class）和属性知识、核心概念（concept）的上下位层级知识
+|文件类型| 文件内容 |
+|--|--|
+|OpenBG_TBox_All_OriginStr.[nt&#124;ttl&#124;jsonld]|主要包含OpenBG本体层面的知识（仅包含类和概念，不包含类和概念的实例）|
+
+sample_data文件:小样本数据
+
+<br />
+
+## 引用
+
+如果您使用了该数据集，请引用如下文章：
+
+Construction and Applications of Open Business Knowledge Graph. Shumin Deng, Hui Chen, Zhoubo Li, Feiyu Xiong, Qiang Chen, Mosha Chen, Xiangwen Liu, Jiaoyan Chen, Jeff Z. Pan, Huajun Chen and Ningyu Zhang.
+
+
+## 遵循协议
+
+数据集遵循[CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/legalcode) 协议。
