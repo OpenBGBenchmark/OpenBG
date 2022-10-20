@@ -412,9 +412,9 @@ sample_data文件:小样本数据
 
 <br />
 
-## 引用
+## Citation
 
-如果您使用了该数据集，请引用如下文章：
+If you use the data or code, please cite the following paper:：
 
 Construction and Applications of Billion-Scale Pre-trained Multimodal Business Knowledge Graph (2022). Shumin Deng, Chengming Wang, Zhoubo Li, Ningyu Zhang, Zelin Dai, Hehong Chen, Feiyu Xiong, Ming Yan, Qiang Chen, Mosha Chen, Jiaoyan Chen, Jeff Z. Pan, Bryan Hooi and Huajun Chen.
 
