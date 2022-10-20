@@ -434,7 +434,8 @@ sample_data文件:小样本数据
 
 如果您使用了该数据集，请引用如下文章：
 
-Construction and Applications of Open Business Knowledge Graph (2022). Shumin Deng, Hui Chen, Zhoubo Li, Feiyu Xiong, Qiang Chen, Mosha Chen, Xiangwen Liu, Jiaoyan Chen, Jeff Z. Pan, Huajun Chen and Ningyu Zhang.
+
+Construction and Applications of Billion-Scale Pre-trained Multimodal Business Knowledge Graph (2022). Shumin Deng, Chengming Wang, Zhoubo Li, Ningyu Zhang, Zelin Dai, Hehong Chen, Feiyu Xiong, Ming Yan, Qiang Chen, Mosha Chen, Jiaoyan Chen, Jeff Z. Pan, Bryan Hooi and Huajun Chen.
 
 
 ## 遵循协议
