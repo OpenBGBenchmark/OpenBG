@@ -434,8 +434,36 @@ sample_data文件:小样本数据
 
 如果您使用了该数据集，请引用如下文章：
 
-
-Construction and Applications of Billion-Scale Pre-trained Multimodal Business Knowledge Graph (2022). Shumin Deng, Chengming Wang, Zhoubo Li, Ningyu Zhang, Zelin Dai, Hehong Chen, Feiyu Xiong, Ming Yan, Qiang Chen, Mosha Chen, Jiaoyan Chen, Jeff Z. Pan, Bryan Hooi and Huajun Chen.
+```bibtex
+@article{DBLP:journals/corr/abs-2209-15214,
+  author    = {Shumin Deng and
+               Chengming Wang and
+               Zhoubo Li and
+               Ningyu Zhang and
+               Zelin Dai and
+               Hehong Chen and
+               Feiyu Xiong and
+               Ming Yan and
+               Qiang Chen and
+               Mosha Chen and
+               Jiaoyan Chen and
+               Jeff Z. Pan and
+               Bryan Hooi and
+               Huajun Chen},
+  title     = {Construction and Applications of Billion-Scale Pre-trained Multimodal
+               Business Knowledge Graph},
+  journal   = {CoRR},
+  volume    = {abs/2209.15214},
+  year      = {2022},
+  url       = {https://doi.org/10.48550/arXiv.2209.15214},
+  doi       = {10.48550/arXiv.2209.15214},
+  eprinttype = {arXiv},
+  eprint    = {2209.15214},
+  timestamp = {Fri, 21 Oct 2022 08:51:37 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2209-15214.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+```
 
 
 ## 遵循协议
