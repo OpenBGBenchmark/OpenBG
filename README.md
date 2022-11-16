@@ -209,7 +209,15 @@ zip somename.zip  {Dataset}_test.tsv
 
 数据分为TBox、ABox和sample_data三部分，支持.ttl、.nt、.jsonld、.owl四种数据格式。
 其中，i）.ttl、.owl格式: 与 .xml 格式类似；ii）.nt: 三元组格式，每一行的数据格式为[头实体]\t[关系]\t[尾实体]；iii）.jsonld 与 .json格式类似。
-<br />
+
+- ❗对于OpenBG中所定义的class，包括Category、Brand、Place，他们的实体所对应的中文明文是**rdfs:label**这一关系所对应的尾实体，英文明文是**http://ali.openkg.cn/alischema#Property/labelEn** 这一关系所对应的尾实体
+
+- ❗对于OpenBG中所定义的concept，包括Time、Scene、Crowd、Theme、Market Segment，他们的实体所对应的中文明文是**skos:prefLabel**这一关系所对应的尾实体，英文明文是**skos:altLabel**这一关系所对应的尾实体
+
+- ❗比如对于例子: **http://ali.openkg.cn/alischema#Crowd/tag_c86346d1f960eb685b171f73d02e320c** (此为URI非URL), 其属于Crowd这一concept的uri，可以通过搜索这一uri，以及关系**skos:prefLabel**、**skos:altLabel**找到尾实体，这就是它所对应的中英文label明文
+
+关于数据集的详细内容，可以参考论文: [https://arxiv.org/pdf/2209.15214.pdf](https://arxiv.org/pdf/2209.15214.pdf)。
+
 
 ### 数据集统计信息
 |类型| 数量 |
