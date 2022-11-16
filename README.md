@@ -417,7 +417,7 @@ sample_data文件:小样本数据
 If you use the data or code, please cite the following paper:
 
 ```bibtex
-@article{DBLP:journals/corr/abs-2209-15214,
+@article{2022_OpenBG,
   author    = {Shumin Deng and
                Chengming Wang and
                Zhoubo Li and
