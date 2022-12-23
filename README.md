@@ -8,6 +8,8 @@
 
 [OpenBG Benchmark](https://tianchi.aliyun.com/dataset/dataDetail?dataId=122271) is a large-scale open business knowledge graph evaluation benchmark based on OpenBG, including multiple sub-datasets and sub-tasks. Welcome submission in [https://tianchi.aliyun.com/dataset/dataDetail?dataId=122271](https://tianchi.aliyun.com/dataset/dataDetail?dataId=122271).
 
+Paper: **Construction and Applications of Billion-Scale Pre-trained Multimodal Business Knowledge Graph** \[[pdf](https://arxiv.org/abs/2209.15214)\]
+
 ## Building process of OpenBG benchmarks
 <center><img src="./img/OpenBG.png" width="80%"></center>
 
