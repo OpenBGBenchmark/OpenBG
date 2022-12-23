@@ -8,6 +8,8 @@
 
 [OpenBG Benchmark](https://tianchi.aliyun.com/dataset/dataDetail?dataId=122271)是一个以OpenBG为基础构建的大规模开放数字商业知识图谱评测基准，包含多个子数据集和子任务。欢迎小伙伴打榜[https://tianchi.aliyun.com/dataset/dataDetail?dataId=122271](https://tianchi.aliyun.com/dataset/dataDetail?dataId=122271)。
 
+论文: **Construction and Applications of Billion-Scale Pre-trained Multimodal Business Knowledge Graph** \[[pdf](https://arxiv.org/abs/2209.15214)\]
+
 
 ## 数据集构建流程
 <center><img src="./img/OpenBG.png" width="80%"></center>
