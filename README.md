@@ -103,7 +103,7 @@ OpenBG500-L
 - [KNN-KG](https://github.com/zjunlp/KNN-KG)
 - [GenKGC](https://arxiv.org/abs/2202.02113)
 
-## Usage
+## Simple Usage
 
 ### Format
 
@@ -180,6 +180,7 @@ _ = [print(line) for line in train[:2]]
 # ['苦荞茶', '外部材质', '苦荞麦']
 # ['精品三姐妹硬糕', '口味', '原味硬糕850克【10包40块糕】']
 ```
+## Package Usage
 
 ## How to download
 
