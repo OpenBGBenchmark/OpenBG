@@ -18,9 +18,9 @@ Paper: **Construction and Applications of Billion-Scale Pre-trained Multimodal B
 Summary statistics of OpenBG datasets:
 |    Dataset    |    # Ent   | # Rel |   # Train   |  # Dev  | # Test  |
 | ------------- | ---------- | ----- | ----------- | ------- | ------- |
-|   OpenBG-IMG  | 27,910     |  136  | 230,087     | 5,000   | 14,675  |
-|   OpenBG500   | 249,743    |  500  | 1,242,550   | 5,000   |  5,000  |
-|   OpenBG500-L | 2,782,223  |  500  | 47,410,032  | 10,000  | 10,000  |
+|   [OpenBG-IMG](https://drive.google.com/file/d/1jg4YcFgOfgjUJCnxBjw9w-6ID8VS_L-X/view?usp=sharing)  | 27,910     |  136  | 230,087     | 5,000   | 14,675  |
+|   [OpenBG500](https://drive.google.com/file/d/1pD_icqV-lLbCXN2rfBaq-Y5i_XcKVCzM/view?usp=sharing)   | 249,743    |  500  | 1,242,550   | 5,000   |  5,000  |
+|   [OpenBG500-L](https://drive.google.com/file/d/1DZZRqc8Yl9mfO66cOS8IKCuim_Bw2oOM/view?usp=sharing) | 2,782,223  |  500  | 47,410,032  | 10,000  | 10,000  |
 |  OpenBG(Full) | 88,881,723 | 2,681 | 260,304,683 |    -    |    -    |
 
 ### OpenBG-IMG
@@ -29,6 +29,10 @@ OpenBG-IMG is a multi-modal dataset in the field of e-commmerce referring to [CC
 **Input-output example:**
 Input: (`Head`[some with `image`]<\t>`Relation`)
 Output: (`Tail`)
+
+#### Download
+
+- [https://drive.google.com/file/d/1jg4YcFgOfgjUJCnxBjw9w-6ID8VS_L-X/view?usp=sharing](https://drive.google.com/file/d/1jg4YcFgOfgjUJCnxBjw9w-6ID8VS_L-X/view?usp=sharing)
 
 #### Directory Tree
 
@@ -54,6 +58,11 @@ OpenBG-IMG
 
 OpenBG500 contains 500 relations, which is filtered and sampled from OpenBG(Full).
 
+#### Download 
+
+- [https://drive.google.com/file/d/1pD_icqV-lLbCXN2rfBaq-Y5i_XcKVCzM/view?usp=sharing](https://drive.google.com/file/d/1pD_icqV-lLbCXN2rfBaq-Y5i_XcKVCzM/view?usp=sharing)
+
+
 #### Directory Tree
 ```shell
 OpenBG500
@@ -73,6 +82,10 @@ OpenBG500
 ### OpenBG500-L
 
 OpenBG500-L contains 500 relations(same as OpenBG500), larger than OpenBG500, which is also filtered and sampled from OpenBG(Full).
+
+#### Download 
+
+- [https://drive.google.com/file/d/1DZZRqc8Yl9mfO66cOS8IKCuim_Bw2oOM/view?usp=sharing](https://drive.google.com/file/d/1DZZRqc8Yl9mfO66cOS8IKCuim_Bw2oOM/view?usp=sharing)
 
 #### Directory Tree
 ```shell
