@@ -196,14 +196,14 @@ _ = [print(line) for line in train[:2]]
 
 ## Submit in Alibaba TIANCHI
 
-- OpenBG-IMG is available at [CCKS2022 Knowledge Processing and Application Evaluation for Digital Commerce Task 3: Multimodal Commodity Knowledge Graph Link Prediction](https://tianchi.aliyun.com/competition/entrance/531957/information), and the source code of baselines is https://github.com/OpenBGBenchmark/OpenBG-IMG .
+- OpenBG-IMG is available at [CCKS2022 Knowledge Processing and Application Evaluation for Digital Commerce Task 3: Multimodal Commodity Knowledge Graph Link Prediction](https://tianchi.aliyun.com/competition/entrance/531957/information), and the source code of baselines is https://github.com/OpenBGBenchmark/OpenBG-IMG.
 - [OpenBG Benchmark：Large Scale Open Business Knowledge Graph Benchmark](https://tianchi.aliyun.com/dataset/dataDetail?dataId=122271) is a benchmark open for a long time.
 
 ### How to submit
 
 - Results of [OpenBG Benchmark：大规模开放数字商业知识图谱评测基准](https://tianchi.aliyun.com/dataset/dataDetail?dataId=122271) can submit on the website:
 
-<center><img src="./img/submit.png" width="80%"></center>
+<center><img src="./img/submit_en.png" width="80%"></center>
 
 1. Every submit file must follow the name format:
 * OpenBG500: OpenBG500_test.tsv
