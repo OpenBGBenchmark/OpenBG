@@ -441,7 +441,7 @@ sample_data文件:小样本数据
 If you use the data or code, please cite the following paper:
 
 ```bibtex
-@article{2022_OpenBG,
+@article{ICDE2023_OpenBG,
   author    = {Shumin Deng and
                Chengming Wang and
                Zhoubo Li and
@@ -460,14 +460,11 @@ If you use the data or code, please cite the following paper:
                Business Knowledge Graph},
   journal   = {CoRR},
   volume    = {abs/2209.15214},
-  year      = {2022},
+  year      = {2023},
   url       = {https://doi.org/10.48550/arXiv.2209.15214},
   doi       = {10.48550/arXiv.2209.15214},
   eprinttype = {arXiv},
-  eprint    = {2209.15214},
-  timestamp = {Fri, 21 Oct 2022 08:51:37 +0200},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2209-15214.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  eprint    = {2209.15214}
 }
 ```
 
