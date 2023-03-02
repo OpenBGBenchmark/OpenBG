@@ -254,7 +254,7 @@ Pre-Trained Multimodal Business Knowledge Graph](https://arxiv.org/pdf/2209.1521
 	<th>包含文件</th>
 	</tr>
     <tr>
-        <td rowspan="4">OpenBG_ABox_Part1.zip包括如下文件</td>
+        <td rowspan="4">OpenBG_ABox_Part1.zip</td>
     <td> OpenBG_ABox_Product_OriginStr_Attributes.nt.tar.gz</td>
     </tr>
     <tr>
@@ -267,7 +267,7 @@ Pre-Trained Multimodal Business Knowledge Graph](https://arxiv.org/pdf/2209.1521
     <td> OpenBG_ABox_Product_OriginStr_wClass.ttl</td>
     </tr>
     <tr>
-        <td rowspan="4">OpenBG_ABox_Part2.zip包括如下文件</td>
+        <td rowspan="4">OpenBG_ABox_Part2.zip</td>
     <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part1.ttl.tar.gz</td>
     </tr>
     <tr>
@@ -280,7 +280,7 @@ Pre-Trained Multimodal Business Knowledge Graph](https://arxiv.org/pdf/2209.1521
     <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part4.ttl.tar.gz</td>
     </tr>
     <tr>
-        <td rowspan="4">OpenBG_ABox_Part3.zip包括如下文件</td>
+        <td rowspan="4">OpenBG_ABox_Part3.zip</td>
     <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part5.ttl.tar.gz</td>
     </tr>
     <tr>
@@ -293,7 +293,7 @@ Pre-Trained Multimodal Business Knowledge Graph](https://arxiv.org/pdf/2209.1521
     <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part8.ttl.tar.gz</td>
     </tr>
     <tr>
-        <td rowspan="4">OpenBG_ABox_Part4.zip包括如下文件</td>
+        <td rowspan="4">OpenBG_ABox_Part4.zip</td>
     <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part9.ttl.tar.gz</td>
     </tr>
     <tr>
@@ -306,7 +306,7 @@ Pre-Trained Multimodal Business Knowledge Graph](https://arxiv.org/pdf/2209.1521
     <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part12.ttl.tar.gz</td>
     </tr>
     <tr>
-        <td rowspan="4">OpenBG_ABox_Part5.zip包括如下文件</td>
+        <td rowspan="4">OpenBG_ABox_Part5.zip</td>
     <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part13.ttl.tar.gz</td>
     </tr>
     <tr>
@@ -319,7 +319,7 @@ Pre-Trained Multimodal Business Knowledge Graph](https://arxiv.org/pdf/2209.1521
     <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part16.ttl.tar.gz</td>
     </tr>
     <tr>
-        <td rowspan="4">OpenBG_ABox_Part6.zip包括如下文件</td>
+        <td rowspan="4">OpenBG_ABox_Part6.zip</td>
     <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part17.ttl.tar.gz</td>
     </tr>
     <tr>
@@ -332,7 +332,7 @@ Pre-Trained Multimodal Business Knowledge Graph](https://arxiv.org/pdf/2209.1521
     <td> OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part20.ttl.tar.gz</td>
     </tr>
     <tr>
-        <td rowspan="10">OpenBG_ABox_Part7.zip包括如下文件</td>
+        <td rowspan="10">OpenBG_ABox_Part7.zip</td>
     <td> OpenBG_ABox_Product_OriginStr_wConcept_part1.nt.tar.gz</td>
     </tr>
     <tr>
@@ -363,7 +363,7 @@ Pre-Trained Multimodal Business Knowledge Graph](https://arxiv.org/pdf/2209.1521
     <td> OpenBG_ABox_Product_OriginStr_wConcept_part5.ttl.tar.gz</td>
     </tr>
     <tr>
-        <td rowspan="8">OpenBG_ABox_Part8.zip包括如下文件</td>
+        <td rowspan="8">OpenBG_ABox_Part8.zip</td>
     <td> OpenBG_ABox_Product_OriginStr_wConcept_part6.nt.tar.gz</td>
     </tr>
     <tr>
@@ -397,7 +397,7 @@ Pre-Trained Multimodal Business Knowledge Graph](https://arxiv.org/pdf/2209.1521
 	<th>包含文件</th>
 	</tr>
     <tr>
-        <td rowspan="3">OpenBG_TBox.zip包括如下文件</td>
+        <td rowspan="3">OpenBG_TBox.zip</td>
     <td> OpenBG_TBox_All_OriginStr.jsonld</td>
     </tr>
     <tr>
