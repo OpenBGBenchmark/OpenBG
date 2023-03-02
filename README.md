@@ -423,9 +423,9 @@ Pre-Trained Multimodal Business Knowledge Graph](https://arxiv.org/pdf/2209.1521
 OpenBG_ABox文件：主要包含标准产品、类和概念实例的关系以及本身的属性信息
 |文件类型| 文件内容 |
 |--|--|
-| OpenBG_ABox_Product_OriginStr_Attributes.[nt&#124;tl] | 主要包含产品属性信息 |
+| OpenBG_ABox_Product_OriginStr_Attributes.[nt&#124;ttl] | 主要包含产品属性信息 |
 | OpenBG_ABox_Product_OriginStr_wClass.[nt&#124;ttl] | 主要包含产品和类别信息，以及与产地、品牌的关联信息 | 
-| OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part[1-20].[nt&#124;ttl] | 主要包含产品与5类概念（场景、人群、适用时间、主题、细分市场）实例的联系 | 
+| OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part[1-20].[ttl] | 主要包含产品与5类概念（场景、人群、适用时间、主题、细分市场）实例的联系 | 
 | OpenBG_ABox_Product_OriginStr_wConcept_part[1-9].[nt&#124;ttl] | 主要包含产品与细分市场这一概念的实例的联系 |
 
 OpenBG_TBox文件：主要包含核心类（class）和属性知识、核心概念（concept）的上下位层级知识
