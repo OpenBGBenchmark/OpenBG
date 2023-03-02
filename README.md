@@ -232,7 +232,8 @@ zip somename.zip  {Dataset}_test.tsv
 
 - ❗比如对于例子: **http://ali.openkg.cn/alischema#Crowd/tag_c86346d1f960eb685b171f73d02e320c** (此为URI非URL), 其属于Crowd这一concept的uri，可以通过搜索这一uri，以及关系**skos:prefLabel**、**skos:altLabel**找到尾实体，这就是它所对应的中英文label明文
 
-关于数据集的详细内容，可以参考论文: [https://arxiv.org/pdf/2209.15214.pdf](https://arxiv.org/pdf/2209.15214.pdf)。
+关于数据集的详细内容，可以参考论文: [Construction and Applications of Billion-Scale
+Pre-Trained Multimodal Business Knowledge Graph](https://arxiv.org/pdf/2209.15214.pdf) (ICDE 2023)。
 
 
 ### 数据集统计信息
@@ -423,7 +424,7 @@ OpenBG_ABox文件：主要包含标准产品、类和概念实例的关系以及
 |文件类型| 文件内容 |
 |--|--|
 | OpenBG_ABox_Product_OriginStr_Attributes.[nt&#124;tl] | 主要包含产品属性信息 |
-|  OpenBG_ABox_Product_OriginStr_wClass.[nt&#124;ttl] | 主要包含产品和类别信息，以及与产地、品牌的关联信息 |
+| OpenBG_ABox_Product_OriginStr_wClass.[nt&#124;ttl] | 主要包含产品和类别信息，以及与产地、品牌的关联信息 |
 | OpenBG_ABox_Product_OriginStr_wConcept_marketOnly_part[1-20].ttl | 主要包含产品与5类概念（场景、人群、适用时间、主题、细分市场）实例的联系 | 
 | OpenBG_ABox_Product_OriginStr_wConcept_part[1-9].[nt&#124;ttl] | 主要包含产品与细分市场这一概念的实例的联系 |
 
