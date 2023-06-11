@@ -442,7 +442,7 @@ sample_data文件：小样本数据
 If you use the data or code, please cite the following paper:
 
 ```bibtex
-@article{ICDE2023_OpenBG,
+@inproceedings{ICDE2023_OpenBG,
   author    = {Shumin Deng and
                Chengming Wang and
                Zhoubo Li and
@@ -459,13 +459,11 @@ If you use the data or code, please cite the following paper:
                Huajun Chen},
   title     = {Construction and Applications of Billion-Scale Pre-trained Multimodal
                Business Knowledge Graph},
-  journal   = {CoRR},
-  volume    = {abs/2209.15214},
-  year      = {2023},
-  url       = {https://doi.org/10.48550/arXiv.2209.15214},
-  doi       = {10.48550/arXiv.2209.15214},
-  eprinttype = {arXiv},
-  eprint    = {2209.15214}
+  booktitle    = {{ICDE}},
+  pages        = {},
+  publisher    = {{IEEE}},
+  year         = {2023},
+  url          = {https://doi.org/10.48550/arXiv.2209.15214}
 }
 ```
 
